@@ -1,0 +1,33 @@
+body {
+    margin:0
+}
+header {
+    background:linear-gradient(90deg,#381B5D,#7638C3);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.void{
+    width:67%;
+}
+nav>a{
+    text-decoration: none;
+    color:white;
+    font-size: 24px; 
+    margin:10px
+    
+}
+main{
+    text-align: center;
+}
+body>a{
+    display: block;
+    color:white;
+    background-color: #6c33b2;
+    text-decoration:none;
+    padding: 12px 32px;
+    border-radius:6px;
+    margin-left:auto ;
+    margin-right:auto;
+}
