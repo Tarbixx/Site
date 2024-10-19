@@ -1,33 +1,102 @@
 body {
-    margin:0
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(106, 92, 92);
+    overflow-x: hidden;
 }
-header {
-    background:linear-gradient(90deg,#381B5D,#7638C3);
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-.void{
-    width:67%;
-}
-nav>a{
-    text-decoration: none;
-    color:white;
-    font-size: 24px; 
-    margin:10px
-    
-}
-main{
+header {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    padding: 20px;
     text-align: center;
+    position: relative;
+    animation: slideIn 1s ease;
 }
-body>a{
+
+header img {
+    width: 100px; /* Adjust as necessary */
     display: block;
-    color:white;
-    background-color: #6c33b2;
-    text-decoration:none;
-    padding: 12px 32px;
-    border-radius:6px;
-    margin-left:auto ;
-    margin-right:auto;
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: rgb(187, 167, 167);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+iframe:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+iframe:nth-of-type(2) {
+    animation-delay: 1s;
+}
+
+iframe:nth-of-type(3) {
+    animation-delay: 1.5s;
+}
+
+a[href="https://www.fortnite.com"] {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    background-color: #dcb0f5;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a[href="https://www.fortnite.com"]:hover {
+    background-color: #c79be8;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
